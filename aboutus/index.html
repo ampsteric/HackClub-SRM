@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../navbar.css">
+    <script
+      src="https://kit.fontawesome.com/354967ed78.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>About US</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" class="active"><img src="../Utils/hackclub.svg" alt=""></a>
+      <a href="./index.html">About Us</a>
+      <a href="../events.html">Events</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+
+    <section class="hero">
+      <div class="container-1">
+        <div class="hero-image">
+          <img class="image" src="images/illustration-1.svg" alt="" />
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="info">
+          <h1 class="hero-heading">What We Are?</h1>
+          <p class="hero-para">
+            A group of motivated students who wish to create an environment for
+            anyone who wishes to begin with tech projects. We believe that there
+            is no task impossible and no target unachievable. Remember, together
+            everyone achieves more. We are drawn to the concept that everyone
+            has a role in development and knowledge is a resource that must be
+            shared to grow. Therefore, we aim to nurture this community and use
+            individual expertise to the development of the overall team and its
+            members.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container-main">
+        <div class="main-image">
+          <img src="images/illustration-2.svg" alt="" class="image" />
+        </div>
+        <div class="main-info">
+          <h3 class="main-header">What We Aim For?</h3>
+          <div class="main-para">
+            <p>
+              Our major goal is creating an ecosystem where developers come to
+              seek help for their projects and our platform will connect
+              like—minded individuals to collaborate and successfully achieve at
+              what they intend to do. Hack Club gives you a worldwide community
+              of thousands of other young makers to talk to. We're artists,
+              writers, engineers, tinkerers, campers, filmmakers, volunteers. We
+              make things. We help one another. We have fun. Join us to be a
+              part of this experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_img">
+        <img src="images/footer-flag.svg" alt="" />
+      </div>
+      <div class="end-1">
+        <h1>WE’RE AT OUR BEST WHEN WE’RE MAKING.</h1>
+        <h2>Connect with Us On....</h2>
+        <div class="socials">
+          <i class="fa fa-2x fa-instagram"></i>
+          <i class="fa fa-2x fa-facebook"></i>
+          <i class="fa fa-2x fa-github"></i>
+          <i class="fa fa-2x fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="about">
+        <p>Developed at SrmHackerEarth.</p>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+  </body>
+</html>

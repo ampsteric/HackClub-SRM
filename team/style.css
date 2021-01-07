@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+:root {
+  --primary: #f23b61;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+
+  color: white;
+  font-family: "Cabin", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+section {
+  background-color: #ffd5c0;
+  margin: auto;
+}
+
+.leads {
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+  padding: 1em 0;
+  font-weight: 800;
+  font-size: 4em;
+  color: black;
+}
+.header span {
+  color: linear-gradient(
+    24deg,
+    rgba(220, 39, 123, 1) 1%,
+    rgba(254, 97, 18, 1) 97%
+  );
+}
+
+.team {
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+  margin: 0.5em;
+  border-radius: 1em;
+  position: relative;
+  background-color: #ffffff34;
+}
+
+.team::before {
+  content: "";
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  filter: blur(4px) grayscale(100%);
+}
+
+.team img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 480px;
+  border-radius: 1em;
+  z-index: 3;
+  object-fit: cover;
+  border: none;
+}
+
+.team:hover img {
+  width: 160px;
+  height: 240px;
+  border: 2px solid white;
+  left: 80px;
+  right: 60px;
+  top: 60px;
+  transition: hover 200ms ease-out;
+}
+
+.team .info {
+  background: linear-gradient(
+    24deg,
+    rgba(220, 39, 123, 1) 1%,
+    rgba(254, 97, 18, 1) 97%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+  padding: 1em;
+  border-top: 0.5em solid white;
+
+  border-radius: 50% 50% 0px 0px;
+  padding-top: 80px;
+  text-align: center;
+  transform: scale(1, 0);
+  transition: transform 200ms ease-out;
+}
+
+.team .name {
+  font-size: 24px;
+  padding: 16px;
+  text-transform: capitalize;
+}
+
+.team .title {
+  color: white;
+  text-transform: capitalize;
+}
+
+.team:hover .info {
+  transform: scale(1);
+}
+
+.team .social {
+  padding-block: 1em;
+  font-size: 24px;
+}
+
+.team .social i {
+  display: inline-block;
+  width: 48px;
+  padding: 12px;
+  background-color: #ededed;
+  border-radius: 16px;
+  margin: 4px;
+}
+
+.team .social i {
+  color: black;
+}
+
+.team .social i:hover {
+  color: var(--primary);
+  background-color: #363636;
+}
+
+.Second {
+  background-color: #d62828;
+  min-height: 100vh;
+}
+
+.Second .Second_heading {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  font-size: 4em;
+  margin: auto;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 98%;
+  margin: 2.5em auto;
+  /* background-color: rosybrown; */
+}
+
+.container .card {
+  position: relative;
+  min-width: 300px;
+  height: 220px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin: 1.2em;
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #db3737;
+  border-radius: 15px;
+  border: 2px solid #de2626;
+  box-shadow: 0 20px 50px rgba(0, 0, 0.5);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .box:hover {
+  transform: translateY(-50px);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  font-size: 3.5em;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card .box .content p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card i {
+  color: white;
+}

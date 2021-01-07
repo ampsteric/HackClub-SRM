@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/354967ed78.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../navbar.css">
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" class="active"><img src="../Utils/hackclub.svg" alt=""></a>
+      <a href="../aboutus/index.html">About Us</a>
+      <a href="../events.html">Events</a>
+      <a href="../team/index.html">Our Team</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  
+
+
+    <section>
+      <div class="header">Our <span>Team</span></div>
+
+      <div class="leads">
+        <div class="team" style="--img: url(pics/1.jpg)">
+          <img src="pics/1.jpg" alt="" />
+          <div class="info">
+            <div class="name">Spongebob Square</div>
+            <div class="title">Team Lead</div>
+            <div class="social">
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team" style="--img: url(pics/2.jpg)">
+          <img src="pics/2.jpg" alt="" />
+          <div class="info">
+            <div class="name">Saddam Hussain</div>
+            <div class="title">Technical Lead</div>
+            <div class="social">
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team" style="--img: url(pics/3.jpg)">
+          <img src="pics/3.jpg" alt="" />
+          <div class="info">
+            <div class="name">Adolf Hitler</div>
+            <div class="title">Corporate Lead</div>
+            <div class="social">
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team" style="--img: url(pics/4.jpg)">
+          <img src="pics/4.jpg" alt="" />
+          <div class="info">
+            <div class="name">Virgil Van Djyk</div>
+            <div class="title">Web Team Lead</div>
+            <div class="social">
+              <a href=""><i class="fab fa-github"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="Second">
+      <div class="Second_heading">Our Trainees</div>
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Zlatan Ibrahimovich</h3>
+              <p>WebDev Trainee</p>
+              <div class="socials">
+                <a href=""><i class="fab fa-2x fa-github"></i></a>
+                <a href=""><i class="fab fa-2x fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Lionel Messi</h3>
+              <p>WebDev Trainee</p>
+              <div class="socials">
+                <a href=""><i class="fab fa-2x fa-github"></i></a>
+                <a href=""><i class="fab fa-2x fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>03</h2>
+              <h3>Cristiano Ronaldo</h3>
+              <p>WebDev Trainee</p>
+              <div class="socials">
+                <a href=""><i class="fab fa-2x fa-github"></i></a>
+                <a href=""><i class="fab fa-2x fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>04</h2>
+              <h3>Ansu Fati</h3>
+              <p>WebDev Trainee</p>
+              <div class="socials">
+                <a href=""><i class="fab fa-2x fa-github"></i></a>
+                <a href=""><i class="fab fa-2x fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+  </body>
+</html>
